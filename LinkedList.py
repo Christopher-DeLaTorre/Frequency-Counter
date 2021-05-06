@@ -11,6 +11,13 @@ class LinkedList:
     new_node.next = self.head
     self.head = new_node
 
+  def edit(self, key):
+    hold = self.head
+
+    while hold != None:
+        if hold.key == key:
+            hold.increase_val()
+
 
   def find(self,item):
 

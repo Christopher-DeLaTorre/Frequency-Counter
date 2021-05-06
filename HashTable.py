@@ -33,11 +33,11 @@ class HashTable:
 
   def insert(self, key, value):
     hold = self.hash_func(key)
-    print("Key index: "+hold)
+    print(f'Key index: {hold}')
 
     if self.arr[hold].find(key) == -1:
         print("Not found")
-        self.arr[hold].append(key, value)
+        self.arr[hold].append(key)
 
     else:
         print("Found")
